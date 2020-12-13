@@ -33,7 +33,3 @@ def remove(request, pk):
         return redirect('/')
     context = {'item': item}
     return render(request, 'remove.html', context)
-
-
-#https://github.com/veronikaro/django-dashboard-app/tree/master/analytics_project
-#https://www.freecodecamp.org/news/how-to-create-an-analytics-dashboard-in-django-app/
