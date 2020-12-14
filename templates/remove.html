@@ -1,0 +1,33 @@
+{% extends 'inheritance.html' %}
+{% block content %}
+
+<body style="color:black">
+<center>
+</br>
+</br>
+</br>
+</br>
+    <h3 class="p" style="color:white"> REMOVE TASK </h3>
+    </br>
+    </br>
+    </br>
+        <div class="item-row">
+        </br>
+            <p style="color:white"> Remove {{ item }}? </p>
+        </br>
+            <form method="post">
+            {% csrf_token %}
+            <input type="submit" value="REMOVE" class="btn btn-danger">
+            </form>
+        </br>
+            <a href="/" style="color:white">Cancel</a>
+        </br>
+        </br>
+        </div>
+</center>
+</body>
+
+
+
+
+{% endblock %}
