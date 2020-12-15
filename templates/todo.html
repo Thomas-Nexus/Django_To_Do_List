@@ -1,0 +1,42 @@
+{% extends 'inheritance.html' %}
+{% block content %}
+{% load static %}
+
+<body style="color:white" class="body">
+<div class="img">
+</br>
+</br>
+    <center>
+    <h3 class="p"> LIST </h3>
+    </br>
+    </br>
+    </br>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form.label }}
+        <input type="submit" value="CREATE" class="submit" style="color:white">
+    </form>
+    </br>
+
+
+    {% for X in items %}
+        <div class="item-row" style="color:white">
+            {% if X.done == True %}
+                <div><strike style="color:red"> {{ X }} </strike></div>
+            {% else %}
+                <div> {{ X }} </div>
+            {% endif %}
+            </br>
+            <hr style="color:black">
+            <a href="{% url 'change' X.id %}" style="color:black" class="btn submit2">CHANGE</a>
+            <a href="{% url 'remove' X.id %}" style="color:white" class="btn btn-danger">REMOVE</a>
+        </div>
+    {% endfor %}
+        </br>
+        </br>
+        </br>
+  </center>
+</div>
+</body>
+
+{% endblock %}
