@@ -1,0 +1,25 @@
+{% extends 'inheritance.html' %}
+{% block content %}
+
+<center>
+    </br>
+    </br>
+    <h3 class="p" style="color:white"> CHANGE TASK </h3>
+    </br>
+    </br>
+    </br>
+        <div class="item-row">
+            <form method="POST" action="">
+            {% csrf_token %}
+              </br>
+                <div> {{ form.label }} </div>
+                <div> {{ form.done }} </div>
+              </br>
+                <input type="submit" value="UPDATE" class="btn submit2" style="color:black">
+            </form>
+            </br>
+            </br>
+        </div>
+</center>
+
+{% endblock %}
