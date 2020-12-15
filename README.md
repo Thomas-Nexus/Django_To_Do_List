@@ -25,5 +25,4 @@ A Django Built To-Do-List Web Application
 
 ## Example Screenshot:
 
-![Slide1](https://user-images.githubusercontent.com/72507931/102094417-35588e80-3e1a-11eb-81e3-bc0ecb890237.JPG)
-
+![Slide1](https://user-images.githubusercontent.com/72507931/102191930-fe35bc00-3eb1-11eb-96e0-d9532f1e95fd.JPG)
