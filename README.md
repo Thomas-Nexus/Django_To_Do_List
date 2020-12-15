@@ -1,6 +1,12 @@
 # Django_To_Do_List
 A Django Built To-Do-List Web Application
 
+## Setup 
+
+    - Runserver on port 8000 - http://127.0.0.1:8000/
+
+    - python manage.py runserver
+
 
 ## Technologies
 
